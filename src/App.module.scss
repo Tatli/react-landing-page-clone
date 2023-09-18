@@ -1,0 +1,26 @@
+main {
+}
+
+.container {
+  margin: 0 96px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 96px;
+  align-items: center;
+
+  img {
+    max-width: 224px;
+  }
+  ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 36px;
+  }
+}
+
+.heroSection {
+}
