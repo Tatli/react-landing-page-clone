@@ -6,7 +6,12 @@ export default function App() {
       <main>
         <header>
           <nav>
-            <a><img src="https://www.productvideoexamples.com/_nuxt/product_video_examples_logo.ce3a8ea9.png" alt="site logo" /></a>
+            <a>
+              <img
+                src="https://www.productvideoexamples.com/_nuxt/product_video_examples_logo.ce3a8ea9.png"
+                alt="site logo"
+              />
+            </a>
             <ul>
               <li>
                 <a href="/#">Features</a>
