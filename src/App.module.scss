@@ -72,8 +72,10 @@ nav {
     align-items: center;
     flex-wrap: wrap;
     div {
-      display: block;
       width: auto;
+    }
+    .navigationBarContent {
+      align-content: center;
     }
     .getAccessNow {
       a {
@@ -480,4 +482,16 @@ ul {
       text-decoration: inherit;
     }
   }
+}
+
+.footerTsuSmiley {
+  opacity: 0.9;
+  color: transparent;
+
+  background: linear-gradient(
+    90deg,
+    rgba(251, 146, 60, 1) 0%,
+    rgba(129, 140, 248, 1) 100%
+  );
+  background-clip: text;
 }

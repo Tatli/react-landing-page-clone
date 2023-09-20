@@ -50,8 +50,8 @@ export default function App() {
             {/* ############# LEFT CONTAINER ############# */}
 
             <div className={styles.heroSectionFlex}>
-              <div className={styles.heroSectionGradient}></div>
-              <div className={styles.heroSectionGradientRelativeAnchor}></div>
+              <div className={styles.heroSectionGradient} />
+              <div className={styles.heroSectionGradientRelativeAnchor} />
               <div className={styles.heroSectionContentLeft}>
                 <a
                   className={styles.heroSelectionProductBadgeContainer}
@@ -301,7 +301,7 @@ export default function App() {
                 <a className={styles.footerMadeBy} href="/#">
                   Made by @fitzekatz{' '}
                 </a>
-                <span>ツ</span>
+                <span className={styles.footerTsuSmiley}>ツ</span>
               </div>
             </div>
           </div>
