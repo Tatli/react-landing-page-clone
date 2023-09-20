@@ -37,7 +37,6 @@ export default function App() {
                 </div>
                 <div className={styles.getAccessNow}>
                   <a href="/#">
-                    <div></div>
                     <p>Get access now</p>
                   </a>
                 </div>
@@ -248,7 +247,7 @@ export default function App() {
                 <div>
                   <p>
                     Learn from more than 100+ carefully selected videos of
-                    companies that creat engaging, shareable videos that not
+                    companies that create engaging, shareable videos that not
                     only boost brand awareness but also convert customers.
                   </p>
                   <a>
