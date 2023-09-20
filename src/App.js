@@ -227,8 +227,6 @@ export default function App() {
             </div>
           </div>
         </section>
-        <br />
-        <section>Section 2</section>
       </main>
       <footer>
         <img
@@ -247,7 +245,7 @@ export default function App() {
                     alt="footer logo"
                   />
                 </div>
-                <div className={styles.footerCopyrightContent}>
+                <div>
                   <p>
                     Learn from more than 100+ carefully selected videos of
                     companies that creat engaging, shareable videos that not

@@ -127,8 +127,47 @@ nav {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  @media (min-width: 640px) {
+    padding-left: 5rem;
+  }
+
+  @media (min-width: 640px) {
+    margin: -1.5rem;
+  }
   // display: grid;
   // grid-template-columns: repeat(2, 1fr);
+  .heroSectionGradient {
+    height: 440px;
+    width: 440px;
+    filter: blur(50px);
+    border-radius: 15rem;
+    display: block;
+    z-index: 0;
+    top: 250px;
+    left: 40px;
+    bottom: 0;
+    position: absolute;
+    transform: scaleX(1.5) scaleY(1.5);
+    background: radial-gradient(
+        77.73% 77.73% at 98.52% 96.25%,
+        #f98bda 0,
+        rgba(128, 76, 239, 0.29) 50.52%,
+        rgba(91, 216, 216, 0) 100%
+      ),
+      radial-gradient(
+        141.73% 105.23% at 50% -7.16%,
+        #e1f8ff 0,
+        rgba(160, 198, 255, 0) 50.73%,
+        rgba(162, 147, 255, 0) 100%
+      ),
+      radial-gradient(
+        112.27% 48.54% at 1.59% 50%,
+        rgba(255, 130, 227, 0.5) 0,
+        rgba(255, 123, 234, 0.095) 53.91%,
+        rgba(254, 216, 255, 0) 100%
+      ),
+      linear-gradient(153.07deg, #8177f3 6.37%, rgba(255, 230, 166, 0) 83.82%);
+  }
 }
 
 .heroSectionContentLeft {
@@ -289,6 +328,7 @@ nav {
   margin-left: auto;
   margin-right: auto;
   width: 50%;
+  justify-content: space-around;
   .heroSectionContainerRightFlex {
     display: flex;
     justify-content: space-around;
@@ -321,6 +361,9 @@ footer {
     height: auto;
     max-width: 100%;
     display: block;
+    left: 0;
+    bottom: 0;
+    vertical-align: middle;
   }
   .container {
     position: relative;
