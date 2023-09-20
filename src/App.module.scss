@@ -313,28 +313,27 @@ nav {
 }
 
 footer {
-  padding: 6rem 0;
+  // padding: 6rem 0;
   margin-top: -2.5rem;
   position: relative;
-  img {
+  .footerGradientImage {
     position: absolute;
     height: auto;
     max-width: 100%;
     display: block;
   }
-  div {
+  .container {
     position: relative;
     z-index: 10;
     margin: 1rem auto;
   }
   .footerFlex {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: no-wrap;
     margin: -1.5rem;
     .footerCopyrightContainer {
-      position: relative;
-      padding-top: 1.5rem;
-      padding-bottom: 1.5rem;
+      padding: 1.5rem 5rem;
+
       @media (min-width: 1024px) {
         width: 41.666667%;
       }
@@ -342,20 +341,100 @@ footer {
         padding-left: 5rem;
         padding-right: 5rem;
       }
+      @media (min-width: 768px) {
+        width: 50%;
+      }
+      .footerCopyrightFlex {
+        display: flex;
+        height: 100%;
+        max-width: 24rem;
+        flex-direction: column;
+        justify-content: space-between;
+        .footerCopyrightLogoContainer {
+          margin-bottom: 1rem;
+          margin-left: -1rem;
+          .footerCopyrightLogo {
+            width: 13rem;
+          }
+        }
+        > div {
+          p {
+            font-size: 0.875rem;
+            line-height: 1.25rem;
+            margin-bottom: 1.5rem;
+          }
+          a {
+            display: block;
+            margin-bottom: 1rem;
+            color: inherit;
+            text-decoration: inherit;
+          }
+        }
+      }
+    }
+    .footerCompanyContainer {
+      padding: 1.5rem;
+      @media (min-width: 1024px) {
+        width: 16.666667%;
+      }
 
       @media (min-width: 768px) {
         width: 50%;
       }
     }
-    .footerCopyrightFlex {
-      display: flex;
-      height: 100%;
-      max-width: 24rem;
-      flex-direction: column;
-      justify-content: space-between;
-      .footerCopyrightLogo {
-        width: 13rem;
+    .footerSupportContainer {
+      padding: 1.5rem;
+      @media (min-width: 1024px) {
+        width: 16.666667%;
       }
+
+      @media (min-width: 768px) {
+        width: 50%;
+      }
+    }
+    .footerAboutContainer {
+      padding: 1.5rem;
+      @media (min-width: 1024px) {
+      }
+      width: 25%;
+
+      @media (min-width: 768px) {
+        width: 50%;
+      }
+      .footerMadeBy {
+        color: white;
+        font-weight: 500;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        text-decoration: inherit;
+      }
+    }
+  }
+}
+
+.footerHeightFull {
+  height: 100%;
+}
+
+.footerHeading3 {
+  color: rgb(107, 114, 128, 1);
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin-bottom: 1.75rem;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  li {
+    margin-bottom: 1rem;
+    a {
+      color: white;
+      font-weight: 500;
+      font-size: 1rem;
+      line-height: 1.5rem;
+      text-decoration: inherit;
     }
   }
 }

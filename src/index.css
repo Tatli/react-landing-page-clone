@@ -30,6 +30,4 @@ a {
 img {
   height: auto;
   max-width: 100%;
-  overflow-clip-margin: content-box;
-  overflow: clip;
 }

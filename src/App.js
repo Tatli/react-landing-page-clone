@@ -18,7 +18,8 @@ export default function App() {
             </div>
             <div>
               <div className={styles.navigationBar}>
-                <div>
+                {/* FIX NAVIGATION ELEMENTS NOT ALIGNED IN CENTER WITH GET ACCESS NOW */}
+                <div className={styles.navigationBarContent}>
                   <ul>
                     <li>
                       <a href="/#">Features</a>
@@ -231,34 +232,80 @@ export default function App() {
       </main>
       <footer>
         <img
+          className={styles.footerGradientImage}
           src="https://www.productvideoexamples.com/_nuxt/gradient-bg-footer.51e46e1d.svg"
           alt="Footer design"
         />
         <div className={styles.container}>
           <div className={styles.footerFlex}>
-            <div className={styles.footerCopyrightContainer}>1</div>
-            <div className={styles.footerCopyrightFlex}>
-              <div>
-                <img
-                  className={styles.footerCopyrightLogo}
-                  src="https://www.productvideoexamples.com/_nuxt/product_video_examples_logo.ce3a8ea9.png"
-                  alt="footer logo"
-                />
-              </div>
-              <div className={styles.footerCopyrightContent}>
-                <p>
-                  Learn from more than 100+ carefully selected videos of
-                  companies that creat engaging, shareable videos that not only
-                  boost brand awareness but also convert customers.
-                </p>
-                <a>
-                  <img src="https://api.producthunt.com/widgets/embed-image/v1/top-post-badge.svg?post_id=390583&theme=dark&period=daily" />
-                </a>
+            <div className={styles.footerCopyrightContainer}>
+              <div className={styles.footerCopyrightFlex}>
+                <div className={styles.footerCopyrightLogoContainer}>
+                  <img
+                    className={styles.footerCopyrightLogo}
+                    src="https://www.productvideoexamples.com/_nuxt/product_video_examples_logo.ce3a8ea9.png"
+                    alt="footer logo"
+                  />
+                </div>
+                <div className={styles.footerCopyrightContent}>
+                  <p>
+                    Learn from more than 100+ carefully selected videos of
+                    companies that creat engaging, shareable videos that not
+                    only boost brand awareness but also convert customers.
+                  </p>
+                  <a>
+                    <img
+                      src="https://api.producthunt.com/widgets/embed-image/v1/top-post-badge.svg?post_id=390583&theme=dark&period=daily"
+                      alt="Product Badge"
+                    />
+                  </a>
+                  <p>
+                    © Copyright 2023. All Rights Reserved by Seven Degrees Labs
+                    LLC.
+                  </p>
+                </div>
               </div>
             </div>
-            <div>2</div>
-            <div>3</div>
-            <div>4</div>
+            <div className={styles.footerCompanyContainer}>
+              <div className={styles.footerHeightFull}>
+                <h3 className={styles.footerHeading3}>Company</h3>
+                <ul>
+                  <li>
+                    <a href="/#">Features</a>
+                  </li>
+
+                  <li>
+                    <a href="/#">Pricing</a>
+                  </li>
+                  <li>
+                    <a href="/#">Blog</a>
+                  </li>
+                  <li>
+                    <a href="/#">Terms</a>
+                  </li>
+                  <li>
+                    <a href="/#">Privacy</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div className={styles.footerSupportContainer}>
+              <h3 className={styles.footerHeading3}>Support</h3>
+              <ul>
+                <li>
+                  <a href="/#">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+            <div className={styles.footerAboutContainer}>
+              <div>
+                <h3 className={styles.footerHeading3}>About</h3>
+                <a className={styles.footerMadeBy} href="/#">
+                  Made by @fitzekatz{' '}
+                </a>
+                <span>ツ</span>
+              </div>
+            </div>
           </div>
         </div>
       </footer>
